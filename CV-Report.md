@@ -4,7 +4,7 @@
 
 Project Report
 
-![image alt text](image_0.png)
+![image alt text](img/image_0.png)
 
 **Project 50**
 
@@ -25,7 +25,7 @@ The study of shapes is a recurring theme in computer vision. As shape is one of 
 
 Our problem statement is to build a 2D Shape recognizer which could recognize common 2D Shapes. Our approach is successfully able to recognize Square, Circle, Triangle and Star.
 
-# ![image alt text](image_1.jpg)
+# ![image alt text](img/image_1.jpg)
 
 # DATASET USED:
 
@@ -36,7 +36,7 @@ Our problem statement is to build a 2D Shape recognizer which could recognize co
 
 **16,000 images of four basic shapes (star, circle, square, triangle)**
 
-![image alt text](image_2.png)
+![image alt text](img/image_2.png)
 
 This dataset contains 16,000 images of four shapes; square, star, circle, and triangle. Each image is 200x200 pixels.
 
@@ -44,7 +44,7 @@ The data was collected using a Garmin Virb 1080p action camera. The shapes were 
 
 The four videos were then processed using OpenCV in Python. Using colorspaces, the green shape is cropped out of the image and resized to 200x200 pixels. The data is arranged into four folders; square, circle, triangle, and star. The images are labeled 0.png, 1.png, etc…
 
-## ![image alt text](image_3.png)
+## ![image alt text](img/image_3.png)
 
 Fig: Original dataset images
 
@@ -63,7 +63,7 @@ We apply a gaussian filter with ( mask_size = 9, sigma=20 ):
 
 Since we need to remove the extra points or noise which are around the shape objects, we apply a gaussian filter to them.
 
-![image alt text](image_4.png)
+![image alt text](img/image_4.png)
 
 fig: results after applying gaussian filter
 
@@ -119,7 +119,7 @@ Now these newly formed images becomes the base of our further experimentations.
 
 As discussed in [2], we can find the shape factor of the figure in the given image. Then, by using the shape factor, and comparing the shape factor lies in which range, we can determine the shape of the given figure.
 
-![image alt text](image_5.jpg)
+![image alt text](img/image_5.jpg)
 
 The final step is to recognize each labeled region from the other similar regions by counting the shape factor parameter, shape factor use to recognizes the labeled region whether it is regular shape or not, and what is the type(s) of this shape(s) if it is regular shape. This can be achieve by using the following relation:
 
@@ -127,11 +127,11 @@ Shape Factor = Area / Diameter^2
 
 Where the area is the area of labeled region, and the diameter is the maximum distance between two pixels in a labeled region (in the boundary of labeled region). Value of shape factor indicates a specific type of shape
 
-![image alt text](image_6.png)
+![image alt text](img/image_6.png)
 
 For detecting the Area can be counted by just counting the no. of ones in the image, and the diameter can be found by finding the edges/contour of the image shape and then finding the maximum distance between two pixels.
 
-![image alt text](image_7.png)
+![image alt text](img/image_7.png)
 
 ## APPROACH 2:
 
@@ -141,19 +141,19 @@ After getting the processed dataset in the form of a csv file. We are now ready 
 
 ### Dataset Exploration: 
 
-![image alt text](image_8.png)
+![image alt text](img/image_8.png)
 
-![image alt text](image_9.png)
+![image alt text](img/image_9.png)
 
-![image alt text](image_10.png)
+![image alt text](img/image_10.png)
 
-![image alt text](image_11.png)
+![image alt text](img/image_11.png)
 
 Mapping string class values to integers
 
-![image alt text](image_12.png)
+![image alt text](img/image_12.png)
 
-![image alt text](image_13.png)
+![image alt text](img/image_13.png)
 
 <table>
   <tr>
@@ -171,31 +171,31 @@ Mapping string class values to integers
 
 We have used a naive bayes classifier. The Naive Bayes classifier works on the principle of conditional probability, as given by the Bayes theorem. The Bayes theorem gives us the conditional probability of event A, given that event B has occurred.
 
-	![image alt text](image_14.png)
+	![image alt text](img/image_14.png)
 
 Naive Bayes learners and classifiers can be extremely fast compared to more sophisticated methods. The decoupling of the class conditional feature distributions means that each distribution can be independently estimated as a one dimensional distribution. This in turn helps to alleviate problems stemming from the curse of dimensionality.
 
 GaussianNB implements the Gaussian Naive Bayes algorithm for classification. The likelihood of the features is assumed to be Gaussian:
 
-![image alt text](image_15.png)
+![image alt text](img/image_15.png)
 
 Splitting the dataset into training data and testing data
 
-![image alt text](image_16.png)
+![image alt text](img/image_16.png)
 
 Testing Set: To test the generalization capability of the learning algorithm, it must be tested over a set of instances not seen during training. This set of instances is called validation set or the testing set. The instances on the validation set should be labeled, so when the trained algorithm is tested with an instance on the validation set it can be known if the output is right or wrong.
 
 Training and testing our model
 
-![image alt text](image_17.png)
+![image alt text](img/image_17.png)
 
 Using LDA to project the data into a 3D space to improve accuracy
 
-![image alt text](image_18.png)
+![image alt text](img/image_18.png)
 
 Plotting confusion matrix
 
-![image alt text](image_19.png)
+![image alt text](img/image_19.png)
 
 # RESULTS:* * *
 
@@ -255,41 +255,42 @@ Using the Gaussian Naive Bayes Classifier, we obtained a very good accuracy of 0
 
 The confusion matrix is as follows:
 
-![image alt text](image_20.png)
+![image alt text](img/image_20.png)
 
 After projecting the data into 3D space using Linear Discriminant Analysis (LDA) and then using the Gaussian Naive Bayes Classifier, we obtained a perfect accuracy score of 100.
 
-The confusion matrix is as follows:![image alt text](image_21.png)
+The confusion matrix is as follows:
+![image alt text](img/image_21.png)
 
 Visualizing some randomly picked images, with their true and predicted label
 
-![image alt text](image_22.png)
+![image alt text](img/image_22.png)
 
 ### Segmenting the Image:
 
 Given Image:
 
-![image alt text](image_23.png)
+![image alt text](img/image_23.png)
 
 Gray Scaled Image:
 
-![image alt text](image_24.png)
+![image alt text](img/image_24.png)
 
 Binarized Image:
 
-![image alt text](image_25.png)
+![image alt text](img/image_25.png)
 
 Canny Edge Detected Image:
 
-![image alt text](image_26.png)
+![image alt text](img/image_26.png)
 
 Contours detected Image:
 
-![image alt text](image_27.png)
+![image alt text](img/image_27.png)
 
 Detecting Shape:
 
-![image alt text](image_28.png)
+![image alt text](img/image_28.png)
 
 Interesting Note for bounding box detection:
 
