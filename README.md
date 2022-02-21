@@ -159,7 +159,7 @@ Mapping string class values to integers
 
 We have used a naive bayes classifier. The Naive Bayes classifier works on the principle of conditional probability, as given by the Bayes theorem. The Bayes theorem gives us the conditional probability of event A, given that event B has occurred.
 
-	![image alt text](img/image_14.png)
+<img src="img/image_14.png" width="350" title="hover text">
 
 Naive Bayes learners and classifiers can be extremely fast compared to more sophisticated methods. The decoupling of the class conditional feature distributions means that each distribution can be independently estimated as a one dimensional distribution. This in turn helps to alleviate problems stemming from the curse of dimensionality.
 
@@ -289,10 +289,10 @@ Interesting Note for bounding box detection:
   </tr>
   <tr>
     <td>
-![image alt text](img/image_29.png)
+	    <img src="img/image_29.png" width="350" title="hover text">
 </td>
     <td>
-![image alt text](img/image_30.png)
+	    <img src="img/image_30.png" width="350" title="hover text">
 </td>
   </tr>
   <tr>
