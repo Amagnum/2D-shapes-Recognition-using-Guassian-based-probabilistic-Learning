@@ -1,16 +1,4 @@
-**CS 419/619**
-
-**Computer Vision**
-
-Project Report
-
-![image alt text](img/image_0.png)
-
-**Project 50**
-
-**2D Shape Recognition**
-
-Group No: G21
+# **2D Shape Recognition**
 
 Adarsh Baghel (180001001)
 
@@ -197,7 +185,7 @@ Plotting confusion matrix
 
 ![image alt text](img/image_19.png)
 
-# RESULTS:* * *
+# RESULTS:
 
 
 ### Approach 1:
@@ -310,12 +298,12 @@ Interesting Note for bounding box detection:
 </table>
 
 
-# CONCLUSION:* * *
+# CONCLUSION:
 
 
 In this Project we suggested 
 
-**Approach 1: **to detect the shape(s) in an image, also the algorithm recognize the type of shape(s). The algorithm has good ability to detect most shapes in
+**Approach 1:** to detect the shape(s) in an image, also the algorithm recognize the type of shape(s). The algorithm has good ability to detect most shapes in
 
 image and separate its prior to recognize. This work have ability to recognize all the known
 
@@ -327,7 +315,7 @@ specific shapes. The algorithm work fine and give very promise results.
 
 **Approach 2:** to detect the shape(s), we used gaussian naive bayes classifier. We ¾ of the dataset for training the model and ¼ of the dataset for testing. Using LDA and projecting the data, we reached a perfect accuracy score of 100. The gaussian bayes classifier model is a great model to solve this problem. For more complex problems such as optical character recognition or face recognition, complex models such as neural networks or support vector should be used instead.
 
-# REFERENCES* * *
+# REFERENCES
 
 
 1.  S. Gomez, "Shape recognition using machine learning,” 2011 6th Colombian Computing Congress (CCC), 2011, pp. 1-3, doi: 10.1109/COLOMCC.2011.5936308.
