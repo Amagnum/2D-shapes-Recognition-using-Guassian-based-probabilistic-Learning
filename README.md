@@ -288,8 +288,12 @@ Interesting Note for bounding box detection:
     <td>With Gaussian filter:</td>
   </tr>
   <tr>
-    <td></td>
-    <td></td>
+    <td>
+![image alt text](img/image_29.png)
+</td>
+    <td>
+![image alt text](img/image_30.png)
+</td>
   </tr>
   <tr>
     <td>We can see that the bounding box for star is not found correctly</td>
